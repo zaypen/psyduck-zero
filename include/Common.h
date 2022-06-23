@@ -1,0 +1,26 @@
+#ifndef PSYDUCK_COMMON_H
+#define PSYDUCK_COMMON_H
+
+static const char *BT_NAME = "Psyduck";
+
+// BLE Characteristic UUID
+static const char PSYDUCK_SERVICE_UUID[] = "F9780000-B876-4B22-9360-AA3995AFA35B";
+static const char PSYDUCK_MODE_CHARACTERISTIC_UUID[] = "F9780001-B876-4B22-9360-AA3995AFA35B";
+static const char PSYDUCK_ARM_ENABLED_CHARACTERISTIC_UUID[] = "F9780100-B876-4B22-9360-AA3995AFA35B";
+static const char PSYDUCK_ARM_WAIT_CHARACTERISTIC_UUID[] = "F9780101-B876-4B22-9360-AA3995AFA35B";
+static const char PSYDUCK_FOOT_ENABLED_CHARACTERISTIC_UUID[] = "F9780200-B876-4B22-9360-AA3995AFA35B";
+static const char PSYDUCK_FOOT_SPEED_CHARACTERISTIC_UUID[] = "F9780201-B876-4B22-9360-AA3995AFA35B";
+
+// PINS
+// Input
+static const uint8_t RIGHT_ARM_TOP_SENSOR = 13;
+static const uint8_t RIGHT_ARM_BOTTOM_SENSOR = 14;
+// Output
+static const uint8_t ARM_OUT_A = 32;
+static const uint8_t ARM_OUT_B = 33;
+static const uint8_t FOOT_OUT = 25;
+static const uint8_t I2S_BCK = 16;
+static const uint8_t I2S_WS = 17;
+static const uint8_t I2S_DATA = 4;
+
+#endif //PSYDUCK_COMMON_H
